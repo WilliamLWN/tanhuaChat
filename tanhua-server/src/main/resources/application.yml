@@ -1,0 +1,60 @@
+server:
+  port: 18080
+dubbo:
+  application:
+    name: tanhua-server
+  registry:
+    address: zookeeper://192.168.100.100:2181
+
+tanhua:
+  secret: tanhua
+  sms:
+    signName: 袁小杰
+    templateCode: SMS_99320050
+    accessKey: LTAI6oNQblwg4mjc
+    secret: pBJAfwYp0bo4EZWiBA5LfOK1qgMHln
+  oss:
+    accessKey: LTAI5tChsjKMkYNrNKegkerH
+    secret: QM0SINvWofwDorIf7gnIdIbDhSghDg
+    bucketName: williams-tanhua
+    endpoint: oss-cn-beijing.aliyuncs.com
+    url: https://williams-tanhua.oss-cn-beijing.aliyuncs.com
+  aip:
+    appId: 24117357
+    apiKey: jzclZfQljgSqDfWp2XXLZHUU
+    secretKey: vnjbAoMRxAL5Me5xxmnXOdAjZBiBAPKu
+  huanxin:
+    url: http://a1.easemob.com/
+    orgName: 1109210512148046
+    appName: tanhua
+    clientId: YXA6-SEYRIT7TJ-6I9I8jxi4YA
+    clientSecret: YXA6lGM-E-dkCKgtyHtOfy41GKB25ac
+
+spring:
+  redis:
+    host: 192.168.100.100
+    port: 6379
+
+# springmvc文件上传默认文件大小是1MB，所以需要在`tanhua-server`工程中的`application:yml`配置文件中，设置文件上传的大小限制。
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 40MB
+
+# ===================================================================
+# 分布式文件系统FDFS配置  mac不能用docker的fastDFS
+# ===================================================================
+# fdfs:
+#   so-timeout: 1500
+#   connect-timeout: 600
+#   #缩略图生成参数
+#   thumb-image:
+#     width: 150
+#     height: 150
+#   #TrackerList参数,支持多个
+#   tracker-list: 192.168.85.40:22122
+#   web-server-url: http://192.168.85.40:8888/
+rocketmq:
+  name-server: 192.168.100.100:9876
+  producer:
+    group: tanhua

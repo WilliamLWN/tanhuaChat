@@ -1,0 +1,29 @@
+package com.tanhua.domain.vo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+/**
+ * 因为userinfo实体类的age是integer类型，而前段返回的是String类型不匹配
+ * 需要此类用于封装前端请求需要的数据
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserInfoVo implements Serializable {
+
+    private Long id; //用户id
+    private String nickname; //昵称
+    private String avatar; //用户头像
+    private String birthday; //生日
+    private String gender; //性别
+    private String age; //年龄
+    private String city; //城市
+    private String income; //收入
+    private String education; //学历
+    private String profession; //行业
+    private Integer marriage; //婚姻状态
+}

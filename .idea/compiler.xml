@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tanhua-commons" />
+        <module name="tanhua-domain" />
+        <module name="tanhua-dubbo-interface" />
+        <module name="tanhua-dubbo-service" />
+        <module name="tanhua-manage" />
+        <module name="tanhua-recommend" />
+        <module name="tanhua-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tanhua" target="1.8" />
+      <module name="tanhua-commons" target="1.8" />
+      <module name="tanhua-domain" target="1.8" />
+      <module name="tanhua-dubbo" target="1.8" />
+      <module name="tanhua-dubbo-interface" target="1.8" />
+      <module name="tanhua-dubbo-service" target="1.8" />
+      <module name="tanhua-manage" target="1.8" />
+      <module name="tanhua-recommend" target="1.8" />
+      <module name="tanhua-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
