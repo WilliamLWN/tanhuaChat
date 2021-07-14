@@ -4,29 +4,29 @@ dubbo:
   application:
     name: tanhua-server
   registry:
-    address: zookeeper://192.168.100.100:2181
+    address: 
 
 tanhua:
-  secret: tanhua
+  secret: 
   sms:
     signName: 
-    templateCode: SMS_99320050
+    templateCode: 
     accessKey: 
-    secret: pBJAfwYp0bo4EZWiBA5LfOK1qgMHln
+    secret: 
   oss:
     accessKey: 
     secret: 
     bucketName: 
-    endpoint: oss-cn-beijing.aliyuncs.com
+    endpoint: 
     url: 
   aip:
     appId: 
     apiKey: 
     secretKey: 
   huanxin:
-    url: http://a1.easemob.com/
+    url: 
     orgName: 
-    appName: tanhua
+    appName: 
     clientId: 
     clientSecret: 
 
