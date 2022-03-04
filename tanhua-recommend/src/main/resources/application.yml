@@ -3,11 +3,11 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://192.168.100.100:27017/tanhua
+      uri: 
 dubbo:
   application:
     name: tanhua-recommend
   registry:
-    address: zookeeper://192.168.100.100:2181
+    address: 
 rocketmq:
-  name-server: 192.168.100.100:9876
+  name-server: 
